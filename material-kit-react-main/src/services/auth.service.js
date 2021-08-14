@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //  const API_URL = 'http://localhost:8080/';
-const API_URL = 'https://ec2-3-15-163-209.us-east-2.compute.amazonaws.com:8080/';
+const API_URL = 'https://cors-everywhere.herokuapp.com/http://ec2-3-15-163-209.us-east-2.compute.amazonaws.com:8080/';
 const register = (username, email, password) => axios.post(`${API_URL}api/auth/signup/`, {
   username,
   email,

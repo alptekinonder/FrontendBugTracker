@@ -2,7 +2,7 @@
 import { ContactlessOutlined } from '@material-ui/icons';
 import axios from 'axios';
 import authHeader from './auth-header';
-const API_URL = 'https://ec2-3-15-163-209.us-east-2.compute.amazonaws.com:8080/';
+const API_URL = 'https://cors-everywhere.herokuapp.com/http://ec2-3-15-163-209.us-east-2.compute.amazonaws.com:8080/';
 //const API_URL = 'http://localhost:8080/';
 const getProjects = () => axios.get(API_URL+ 'projects', { headers: authHeader() }
 ).then((response) => {
